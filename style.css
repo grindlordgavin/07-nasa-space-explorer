@@ -40,6 +40,14 @@ h1 {
   margin-right: 15px;
 }
 
+.space-fact {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #323a45; /* NASA color-gray-dark */
+}
+
 /* Date‐picker & button row */
 .filters {
   display: flex;
@@ -143,8 +151,49 @@ button:hover {
   margin-bottom: 20px;
 }
 
+#loading-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-message-message {
+  margin-bottom: .5rem;
+}
+
+.animation-container {
+  position: relative;
+}
+
+.loading-message-animation {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 2.5px;
+
+  animation: loading 1s infinite alternate;
+}
+
+@keyframes loading {
+  from {
+    translate: -1ch;
+    width: 5px;
+  }
+
+  50% {
+    translate: -1ch;
+    width: 21.5ch;
+  }
+
+  to {
+    translate: calc(20.5ch - 5px);
+    width: 5px;
+  }
+}
+
 .space-image {
   display: block;
+  text-decoration: none;
   overflow: hidden;
 
   width: 20rem;
