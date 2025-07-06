@@ -16,10 +16,16 @@
     <div class="filters">
       <input type="date" id="startDate" />
       <input type="date" id="endDate" />
-      <button>Get Space Images</button>
+      <button id="getButton">Get Space Images</button>
     </div>
 
     <div id="gallery" class="gallery">
+      <a class="space-image" target="_blank" style="display: none">
+        <img src="">
+        <span class="space-image-title">Cool space image!</span>
+        <span class="space-image-date">April 20, 2025</span>
+      </a>
+
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
         <p>Select a date range and click "Get Space Images" to explore the cosmos!</p>

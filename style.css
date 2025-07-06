@@ -142,3 +142,49 @@ button:hover {
   font-size: 48px;
   margin-bottom: 20px;
 }
+
+.space-image {
+  display: block;
+  overflow: hidden;
+
+  width: 20rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+
+  transition: all .5s;
+
+  margin: 1rem;
+
+  cursor: pointer;
+}
+
+.space-image:hover {
+    scale: 110%;
+}
+
+.space-image img {
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.space-image span {
+  margin-left: 1rem;
+}
+
+.space-image-title {
+  color: #0b3d91; /* NASA color-primary-darker */
+  font-size: 145%;
+  font-weight: bold;
+  /* text-decoration: underline; */
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.space-image-date {
+  color: #323a45; /* NASA color-gray-dark */
+  margin-bottom: 1rem;
+}
